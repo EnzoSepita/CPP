@@ -1,0 +1,16 @@
+# Créateurs: Sara Bouâmama et Nathan Rabet
+# Reviewers: Tanya HALICHE Enzo SOUANE
+# is_prime_prog()
+# 27/09/2022
+
+
+Le code compile correctement.
+Les nombres premiers supérieurs à 1 sont traité comme il se doit.
+Le cas du 1 est bien traité. Cependant, 0 est traité comme un nombre premier alors qu'il ne l'est pas.
+
+Prime peut être plus rapide si l'on met 'sqrt(n)' au lieu de 'n/2' dans la boucle 'for'.
+
+Sinon le code fonctionne très bien.
+La sortie est conforme au modèle de l'exercice.
+ 
+Bien joué !;)
