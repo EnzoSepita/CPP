@@ -10,7 +10,7 @@ int main(int argc , char* argv[]) {
         std::ifstream fileStream(argv[1]);
         if (fileStream.fail()) {
             //file could not be opened
-            std::cout << "The file " << argv[1] << "could not be opened." << std::endl;
+            std::cout << "The file " << argv[1] << " could not be opened." << std::endl;
             return 1;
         }
         int count = 0 ;
