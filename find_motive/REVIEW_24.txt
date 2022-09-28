@@ -1,0 +1,25 @@
+# Créateurs: Sara Bouâmama et Nathan Rabet
+# Reviewers: Tanya HALICHE Enzo SOUANE
+# is_prime_prog()
+# 27/09/2022
+
+Le code compile correctrement.
+
+Gérer le cas où le nombre d'argument n'est pas correct n'est pas utile dans cet exercice là puisqu'on nous dit dans le sujet sue l'exécutable sera toujours appelé avec 2 arguments.
+
+Il y a un include qui n'est pas utilisé "stdio"
+
+Le message affiché n'est pas celui attendu : 
+
+--> message attendu :
+"The file text.txt contains 5 words containing the motive tanya"
+--> message obtenu :
+"The file *text.txt* contains *5* words containing the motive *tanya*"
+
+(les étoiles n'étaient pas utiles ;))
+
+Sinon le code fonctionne parfaitement
+Le cas des erreurs de fichers est traité
+Le cas du même motif dans le même mot est traité aussi
+
+Bien joué ! ;)
