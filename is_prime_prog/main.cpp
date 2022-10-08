@@ -6,27 +6,29 @@
 
 
 int main(){
-    int n;
-    std::string prime = "True";
+    long long n;
 
 
     while(std::cin >> n)
     {
-        prime="True";
+        bool prime= true;
         if (n <= 1)
         {
-            prime = "False";
-            std::cout << n << " is a Prime : " << prime << '\n' ;
-            continue;
+            prime = false;
         }
-        for (int i = 2; i < sqrt(n); i++)
+        for (long long i = 2; i <= std::sqrt(n); i++) {
             if (n % i == 0) {
-                prime = "False";
+                prime = false;
                 break;
             }
-        std::cout << n << " is a Prime : " << prime << '\n';
+        }
+        if (prime)
+            std::cout << n << " is a Prime: True\n";
+        else
+            std::cout << n << " is a Prime: False\n";
 
     }
     return 0;
 
 }
+
