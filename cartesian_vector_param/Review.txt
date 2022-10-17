@@ -1,0 +1,14 @@
+# Code Review 
+# Créateurs : Tanya Haliche et Sara Bouamama
+# Réviseur : Enzo SOUANE 
+# Cartesian_vector_param
+# 15/10/2022
+
+Architecture ok.
+Le code compile bien.
+Tous les opérateurs ont été vus.
+Résultats bons.
+
+La sortie est comme elle devrait être.
+
+Bon travail !
