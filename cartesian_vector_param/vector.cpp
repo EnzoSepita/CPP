@@ -1,36 +1,37 @@
 #include "vector.hh"
-#include <ostream>
+
 #include <iostream>
+#include <ostream>
+
+size_t Vector::get_size() const
+{
+    return size;
+}
 
 Vector::Vector()
 {
-    dim = NDIM;
-    for (size_t i = 0; i < dim; i++)
+    size = NDIM;
+    for (size_t i = 0; i < size; i++)
     {
-        coord[i] = 0;
+        data[i] = 0;
     }
 }
 
 Vector::Vector(std::initializer_list<value> list)
 {
-    dim = list.size();
+    size = list.size();
     size_t i = 0;
     for (auto &elem : list)
     {
-        coord[i++] = elem;
+        data[i++] = elem;
     }
-}
-
-size_t Vector::get_size() const
-{
-    return dim;
 }
 
 Vector &Vector::operator+=(const Vector &rhs)
 {
     for (size_t i = 0; i <  rhs.get_size(); i++)
     {
-        coord[i] = coord[i] + rhs[i];
+        data[i] = data[i] + rhs[i];
     }
     return *this;
 }
@@ -39,7 +40,7 @@ Vector &Vector::operator-=(const Vector &rhs)
 {
     for (size_t i = 0; i <  rhs.get_size(); i++)
     {
-        coord[i] = coord[i] - rhs[i];
+        data[i] = data[i] - rhs[i];
     }
     return *this;
 }
@@ -76,12 +77,12 @@ value Vector::operator*(const Vector &rhs)
 
 value Vector::operator[](size_t i) const
 {
-    return coord[i];
+    return data[i];
 }
 
 value &Vector::operator[](size_t i)
 {
-    return coord[i];
+    return data[i];
 }
 
 Vector operator*(Vector &rhs, const value n)
@@ -107,7 +108,7 @@ Vector operator+=(Vector &rhs, const value n)
 {
     for (size_t i = 0; i <  rhs.get_size(); i++)
     {
-        rhs[i] = rhs[i] + n;
+        rhs[i] = rhs[i] + n;    
     }
     return rhs;
 }
@@ -121,4 +122,3 @@ std::ostream& operator<<(std::ostream &os, const Vector& rhs)
     }
     return os << "}";
 }
-
