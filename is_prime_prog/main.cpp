@@ -1,6 +1,3 @@
-//
-// Created by enzo on 22/09/22.
-//
 #include<iostream>
 #include<cmath>
 
@@ -23,9 +20,9 @@ int main(){
             }
         }
         if (prime)
-            std::cout << n << " is a Prime: True\n";
+            std::cout << n << " is a prime: True\n";
         else
-            std::cout << n << " is a Prime: False\n";
+            std::cout << n << " is a prime: False\n";
 
     }
     return 0;
